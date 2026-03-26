@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Environment variables
+.env
+backend/.env
+frontend/.env
+
+# Build outputs
+dist/
+frontend/dist/
+build/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.log
+
+# Python
+__pycache__/
+.venv/
+venv/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large Project Documents (optional to exclude, but keeps repo clean)
+*.docx
+*.pdf
+*.pptx

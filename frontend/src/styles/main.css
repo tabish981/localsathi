@@ -1,0 +1,127 @@
+/* ===============================
+    THEME VARIABLES 
+================================ */
+:root {
+  /* Light Theme (Default) */
+  --bg-gradient: linear-gradient(180deg, #1f5f9c 0%, #5f86ad 55%, #f1e3d3 100%);
+  --text-main: #333333;
+  --text-secondary: #555555;
+  --card-bg: #ffffff;
+  --sidebar-bg: #ffffff;
+  --input-bg: #ffffff;
+  --border-color: #dddddd;
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+body.dark-theme {
+  /* Dark Theme */
+  --bg-gradient: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+  --text-main: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --card-bg: #1e293b;
+  --sidebar-bg: #1e293b;
+  --input-bg: #334155;
+  --border-color: #334155;
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* ===============================
+    GLOBAL STYLES
+================================ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-gradient); /* Uses dynamic variable */
+  color: var(--text-main);
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Auth pages (Login & Signup) */
+.auth-container {
+  max-width: 360px;
+  width: 90%;
+  margin: 80px auto;
+  background: var(--card-bg); /* Uses dynamic variable */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px var(--shadow);
+}
+
+.auth-container p {
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+/* Hamburger Menu */
+.hamburger {
+  width: 240px;
+  background: var(--sidebar-bg); /* Uses dynamic variable */
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  border-right: 1px solid var(--border-color);
+  transition: background 0.3s ease;
+}
+
+.hamburger a {
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  color: var(--text-main);
+}
+
+/* Card Styling */
+.card {
+  background: var(--card-bg); /* Uses dynamic variable */
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--text-main);
+  box-shadow: 0 4px 10px var(--shadow);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Form Elements */
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  background: var(--input-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--text-secondary);
+}
+
+/* Main content container */
+.page-container {
+  margin-left: 260px;
+  padding: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .page-container {
+    margin-left: 0;
+  }
+  .hamburger {
+    display: none; /* Add toggle logic for mobile if needed */
+  }
+}

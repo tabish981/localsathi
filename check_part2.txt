@@ -1,0 +1,72 @@
+Table of Content (Part 2)
+4. Methodology
+4.1 Introduction
+4.2 Proposed Work
+4.3 Proposed Methodology
+4.4 System Analysis
+4.9 Feasibility
+4.10 Conclusion
+5. Details of Design, Working and Processes
+5.1 System Architecture
+5.2 Implementation
+5.4 Conclusion
+6. Results and Application
+6.1 Snapshots / UI
+6.2 Application
+6.3 Conclusion
+7. Conclusions and Future Scope
+7.1 Limitation
+7.2 Future Enhancement
+7.3 Conclusion
+7.4 References and Bibliography
+Chapter 4: Methodology
+4.1 Introduction
+The development methodology covers the overall architecture, tech stack, and step-by-step logic used to build Local Sathi.
+4.2 Proposed Work
+Tech stack:
+Frontend: React / Next.js
+Backend: Node.js (Express)
+Database: MongoDB
+Key integrations: Map APIs (Google Maps, OpenStreetMap)
+4.3 Proposed Methodology
+1. Login / Signup: Secure storage, user authentication.
+2. Home Page: Map API integration, User current location.
+3. Search Page: Inputs for Source and Destination.
+4. Ideal Transports: Transport service database and APIs for booking availability.
+5. Residence: Filtering system for budget, distance, rating, type of stay/food.
+6. Overall Expenses: Pricing algorithm for total trip expense estimation.
+4.4 System Analysis
+The system relies on aggregating publicly available data alongside a robust backend capable of returning real-time geographic data processing via Leaflet / Maps API.
+4.9 Feasibility
+The project is highly feasible technically and economically, given the availability of modern frameworks like React and low-cost mapping solutions.
+4.10 Conclusion
+A structured methodology using API-driven data ensures long-term scalability and an enhanced user experience.
+Chapter 5: Details of Design, Working and Processes
+5.1 System Architecture
+The Local Sathi architecture follows a client-server model. The frontend built in React communicates via RESTful APIs to an Express Node.js server. Geographic data is fetched asynchronously from Mapping APIs, while user credentials, saved routes, and favorites are stored in a MongoDB database.
+5.2 Implementation
+Implementation involves initializing the React application, writing the CSS using vanilla CSS for optimal flexibility, setting up the Node routing for auth endpoints (`/routes/auth.js`), and integrating interactive UI components such as badges, transport selectors, and master progress bars.
+5.4 Conclusion
+The system is designed to be modular so that new modules (like real-time train tracking) can be plugged into the architecture securely.
+Chapter 6: Results and Application
+6.1 Application
+The primary application is a web-based smart travel companion. It actively helps users in real-world scenarios such as estimating the train or taxi fare from source to destination, displaying a pop-up description for nearby attractions, and aggregating costs into an overall budget estimator.
+6.3 Conclusion
+The developed application accurately reflects user requirements and efficiently performs navigation and cost estimation.
+Chapter 7: Conclusions and Future Scope
+7.1 Limitation
+Initial limitations involve handling API rate limits and restricted offline capabilities.
+7.2 Future Enhancement
+Future enhancements include:
+- Integration with live public transport APIs.
+- Payment gateway for hotel/taxi booking.
+- AI-based personalized recommendations.
+- Multi-language support.
+7.3 Conclusion
+The Local Sathi Website provides citizens and travelers with a one-stop digital solution for navigating the city efficiently. By integrating features such as login/signup, real-time location tracking through Map APIs, transport suggestions, residence options, and overall expense calculation, the system ensures convenience, transparency, and accessibility. It promotes tourism while supporting local businesses.
+7.4 References and Bibliography
+1. Raj Kamal, Internet of Things: Architecture and Design, McGraw Hill Education.
+2. Neha Yadav, Local Sathi Technologies and Applications, Springer Publications.
+3. Google Maps API Documentation – https://developers.google.com/maps
+4. OpenStreetMap Project – https://www.openstreetmap.org
+5. Kumar, S., & Singh, R. (2020). Local Sathi Development and Digital Solutions. IEEE Xplore.

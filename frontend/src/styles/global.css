@@ -1,0 +1,187 @@
+/* ===============================
+    THEME VARIABLES (UNIVERSAL)
+================================ */
+:root {
+    /* Universal Premium Theme */
+    --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #1e1b4b 100%);
+    --card-bg: rgba(255, 255, 255, 0.08);
+    --btn-bg: rgba(255, 255, 255, 0.9);
+    --text-main: #ffffff;
+    --text-muted: #94a3b8;
+    --border-color: rgba(255, 255, 255, 0.15);
+    --shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    --transition-speed: 0.3s;
+}
+
+body.dark-theme {
+    /* Maintain consistency as requested */
+    --bg-gradient: linear-gradient(135deg, #020617 0%, #0f172a 100%);
+    --card-bg: rgba(15, 23, 42, 0.8);
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ===============================
+    RESET & BASE STYLES
+================================ */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text-main);
+    transition: background var(--transition-speed), color var(--transition-speed);
+}
+
+/* ===============================
+    EXPANDED & RESPONSIVE LAYOUT
+================================ */
+/* Main container that expands to fill space on desktop */
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+}
+
+/* The card from your screenshot, expanded for desktop */
+.settings-container, 
+.glass-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-color);
+    border-radius: 40px;
+    padding: 40px 30px;
+    width: 100%; /* Expands to fill parent */
+    max-width: 500px; /* Limits width so it doesn't look stretched on ultra-wide */
+    margin: 40px auto;
+    box-shadow: var(--shadow);
+    transition: background var(--transition-speed);
+}
+
+/* ===============================
+    BUTTONS & INTERACTIVE
+================================ */
+.settings-option-btn, 
+.action-btn {
+    width: 100%;
+    background: var(--btn-bg);
+    border: 1px solid var(--border-color);
+    padding: 15px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transition: transform 0.2s ease, background var(--transition-speed);
+    margin-bottom: 15px;
+}
+
+.settings-option-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.settings-option-btn span {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+/* Back Arrow specific style */
+.back-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    transition: opacity 0.2s;
+}
+
+.back-btn:hover {
+    opacity: 0.7;
+}
+
+/* ===============================
+    MEDIA QUERIES (RESPONSIVE)
+================================ */
+/* Extra Large Screens */
+@media (min-width: 1400px) {
+    .page-container {
+        max-width: 1320px;
+    }
+}
+
+/* Laptops and desktops */
+@media (max-width: 1200px) {
+    .page-container {
+        max-width: 1140px;
+    }
+}
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+    .page-container {
+        max-width: 960px;
+    }
+    .settings-container, .glass-card {
+        max-width: 450px;
+        padding: 35px 25px;
+    }
+    .hidden-tablet {
+        display: none !important;
+    }
+}
+
+/* Small Tablets / Large Phones */
+@media (max-width: 768px) {
+    .page-container {
+        max-width: 720px;
+        padding: 15px;
+    }
+    .settings-container, .glass-card {
+        max-width: 90%;
+        border-radius: 30px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+    .page-container {
+        padding: 10px;
+    }
+    .settings-container {
+        width: 95%;
+        margin: 15px auto;
+        padding: 25px 15px;
+        border-radius: 25px;
+    }
+
+    .plan-nav-title {
+        font-size: 1.1rem;
+    }
+
+    .hidden-mobile {
+        display: none !important;
+    }
+
+    .show-mobile {
+        display: block !important;
+    }
+}
+
+/* Landscape orientation for mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .settings-container, .glass-card {
+        margin: 10px auto;
+        padding: 15px;
+    }
+}
