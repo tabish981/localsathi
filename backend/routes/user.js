@@ -3,7 +3,7 @@ const User = require("../models/User");
 const Trip = require("../models/Trip");
 const Feedback = require("../models/Feedback");
 const Review = require("../models/Review");
-const auth = require("../middleware/authMiddleware");
+const auth = require("../middleware/auth");
 
 // @route   PUT /api/user/:id
 // @desc    Update user profile data
