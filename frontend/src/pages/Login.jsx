@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 import "../styles/auth.css";
-import gatewayImg from "../assets/login.png";
+import gatewayImg from "../assets/login.jpg";
 import logo from "../assets/logo.png";
 import eyeIcon from "../assets/eye.svg";
 import eyeOffIcon from "../assets/eye-off.svg";
