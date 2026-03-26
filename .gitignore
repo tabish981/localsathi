@@ -29,7 +29,7 @@ venv/
 .DS_Store
 Thumbs.db
 
-# Large Project Documents (optional to exclude, but keeps repo clean)
+# Large Project Documents
 *.docx
 *.pdf
 *.pptx
