@@ -341,7 +341,7 @@ export default function Home() {
       {/* SEPARATE FOOTER SECTION */}
       <Footer />
 
-      {/* <LocalsathiBot /> */}
+      {/*<LocalsathiBot />*/}
     </>
   );
 }

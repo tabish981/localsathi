@@ -1,0 +1,35 @@
+1.1 Background of the Industry
+1.2 Problem Faced by Users
+1.3 Need for a  Digital Detox System
+1.4 Evolution of Digital Detox System
+1.5 Introduction to the Proposed System
+1.6 Objectives of the Project
+1.7 Features of the System
+1.8 Published Research
+3.1 Introduction to Scope
+3.2 Functional Scope
+3.3 Technical Scope
+3.4 Application Scope
+3.5 Scope for Future Enhancements
+3.6 Limitations of the Project
+3.7 Overall Scope Summary
+4.1 Introduction
+4.2 Software Development Model
+4.3 Requirement Analysis
+4.4 System Design
+4.5 Development (Implementation)
+4.6 System Functionality Methodology
+4.7 Testing Methodology
+4.8 Deployment Methodology
+4.9 Maintenance and Future Updates
+4.10 Overall Methodology Summary
+5.1 Introduction
+5.2 System Architecture
+5.3 System Modules
+5.4 Working of the System
+5.5 Data Flow Description
+5.6 Database Design
+5.7 Process Flow
+5.8 Security Mechanism
+6.1 Results
+6.2 Applications
